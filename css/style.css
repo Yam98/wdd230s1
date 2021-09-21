@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo&family=Nunito:ital,wght@1,300;1,400&display=swap");
+
 body {
+    font-family: "Nunito", Arial, sans-serif;
     font-size: 16pt;
 }
 
@@ -9,7 +12,6 @@ header, main, footer {
 /* comments */
 
 header {
-    
     background-color: aquamarine;
     padding: 1.5rem;
 }
@@ -21,10 +23,17 @@ header img {
 header img {
     width: 200px;
     height: auto;
+    box-shadow: 5px 10px 15px #999;
 }
 
 h1 {
     font-size: 2.4rem;
     color: black;
     text-align: center;
+}
+footer {
+    background-color: cadetblue;
+    font-family: "Exo", Times New Roman, sans-serif;
+    text-align: center;
+    padding: 1.9em;
 }
