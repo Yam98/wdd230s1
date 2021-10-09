@@ -1,0 +1,12 @@
+@media only screen and (min-width: 42.5em) {
+    h1, h2, h3{
+        font-size: 3.4rem;  
+    }
+    main img {
+        box-shadow: 5px 10px 15px #999;
+        float: right;
+        border-radius: 0 10px 0 0;
+    }
+    
+    
+}
