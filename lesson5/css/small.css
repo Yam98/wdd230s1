@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Montserrat:wght@200&display=swap');
+
+
+body {
+    background-color: #C9E3E3;
+    font-family: "Fira Sans", sans-serif;
+    /*padding: 5px 25px;*/
+    padding: 0; /*for the heading supost to be better 0*/
+    font-size: 18px;
+    margin: 0;
+    color: BLACK;
+}
+h1 {
+    font-family: "Montserrat", serif;
+    font-size: 32px;
+}
+  
+h2 {
+/*background-color: #EAE4E9;*/
+/*font-family: "Montserrat", Times New Roman, sans-serif;*/
+font-family: "Fira Sans", sans-serif;
+font-size: 1.7em;
+font-weight: 400;
+padding: 10px;
+/* margin: 25px; make everything*/
+margin-bottom: -18px;
+}
+
+header {
+padding: 5px 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+img {
+max-width: 100%;
+}
+
+.headings {
+display: flex;
+flex-direction: column;
+}
+.headings h1 {
+font-size: 2rem;
+margin: 0 0 0 17px;
+}
+
+
+.dina {
+font-style: "Fira Sans", sans-serif;
+letter-spacing: 1pt;
+/*color: forestgreen;*/
+margin-left: 20px;
+font-size: 1.3rem;
+}
+
+/*NAVIGATON*/
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    /*button acording to apple must be 44px*/
+    font-size: 1.6rem;
+    color: #555;
+
+}
+nav {
+    background-color: #EAE4E9; /*#ccc*/
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+   
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top:  1px solid rgba(0,0,0,0.3);
+    /*rgba..red,green,blue,alpha make a diferencen in the intensity from the color*/
+
+}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+nav ul.hide {display: none;}
+
+
+/*MAIN!!!!!!!*/
+main{
+    display: grid;
+    max-width: 960px;
+    margin: 0 auto;
+}
+main p {
+    background-color: #B7E4C7;
+    
+    
+    line-height: 1.6em;}
+.banner-box {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.banner-box img {
+width: 100%;
+grid-column: 1/ -1;
+grid-row: 1;
+}
+.action {
+font-family: "Fira Sans", sans-serif;
+grid-column: 1;
+grid-row: 1;
+background-color: rgba(240, 240, 240, 0.8);
+margin: 1em 7em;
+padding: 0.5em;
+text-align: center;
+}
+
+.tablessun {
+    display: none;
+}
+
+
+.home-grid {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-gap: 5em;
+}
+.headline-1 {
+grid-column: 1/4;
+grid-row: 1/2;
+}
+
+.paragraph-1 {
+grid-column: 1/4;
+grid-row: 2/3;
+}
+
+.home-right-img {
+grid-column: 4/6;
+grid-row: 1/4;
+margin-left: -25px;
+border: 3px solid #ccc;
+padding: 10px;
+box-shadow: 5px 10px 15px #999;
+}
+footer {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+padding: 0.4em;
+align-items: right;
+}
+.map {
+    display: none;
+}
+.social {
+text-align: right;
+grid-column: 3/4;
+}
+footer {
+background-color: #219EBC;
+color: white;
+}
+@media screen and (max-width: 550px) {
+.home-grid,
+.banner-box,
+nav ul {
+    display: block;
+}
+nav ul li {
+    text-align: right;
+}
+.social img {
+    width: 45px;}
+}
