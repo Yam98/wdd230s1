@@ -1,0 +1,7 @@
+@media only screen and (min-width: 35em) {
+    /*why the nromal is 35? this one was 32.5em*/
+    h1{
+        font-size: 2.9rem;  
+    }
+    
+}

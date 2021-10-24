@@ -1,0 +1,227 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Montserrat:wght@200&display=swap');
+*/
+
+body {
+    background-color: #C9E3E3;
+    font-family: "Fira Sans", sans-serif;
+    /*padding: 5px 25px;*/
+    padding: 0; /*for the heading supost to be better 0*/
+    font-size: 18px;
+    margin: 0;
+    color: BLACK;
+}
+h1 {
+    font-family: "Montserrat", serif;
+    font-size: 32px;
+}
+  
+h2 {
+/*background-color: #EAE4E9;*/
+/*font-family: "Montserrat", Times New Roman, sans-serif;*/
+font-family: "Fira Sans", sans-serif;
+font-size: 2.1em;
+font-weight: 400;
+padding: 10px;
+/* margin: 25px; make everything*/
+margin-bottom: -18px;
+margin: 0 0 0 17px;
+}
+
+/*---------------------------header---------------------*/
+/*header in the class logo im specifaying the place and marging*/
+header {
+padding: .5rem 2%/*I used 5px 0*/;
+display: flex;
+/*thsi 2 down take it to the center*/
+align-items: center;
+justify-content: center;
+}
+
+img {
+max-width: 100%;
+}
+header figure.logo {
+float: left;
+margin: 0 2% 0 0;
+}
+
+.headings {
+display: flex;
+flex-direction: column;
+}
+.headings h1 {
+font-size: 2rem;
+margin: 0 0 0 17px;
+}
+
+
+.dina {
+font-style: "Fira Sans", sans-serif;
+letter-spacing: 1pt;
+/*color: forestgreen; the marging is the one from w3 now marging 0 it will do someting  */
+/*margin: 0;*/
+margin-left: 20px;
+font-size: 1.3rem;
+
+}
+
+/*--------------------NAVIGATON-------------------------*/
+/*image 200 500 800 1100*/
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    /*button acording to apple must be 44px*/
+    font-size: 1.6rem;
+    color: #555;
+    
+
+}
+nav {
+    background-color: #EAE4E9; /*#ccc*/
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+   
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top:  1px solid rgba(0,0,0,0.3);
+    /*rgba..red,green,blue,alpha make a diferencen in the intensity from the color*/
+    
+}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+nav ul.hide {display: none;
+    align-items: center;
+    justify-content: center;}
+
+
+/*-------------------------MAIN------------!!!!!!!*/
+.contentbox {
+    padding: 10px;
+    border: 2px solid rgb(161, 149, 149);
+}
+
+main{
+    display: grid;
+    max-width: 960px;
+    margin: 0 auto;
+}
+main p {
+    background-color: #B7E4C7;
+    
+    
+    line-height: 1.6em;}
+.banner-box {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.banner-box img {
+width: 100%;
+grid-column: 1/ -1;
+grid-row: 1;
+}
+.action {
+font-family: "Fira Sans", sans-serif;
+grid-column: 1;
+grid-row: 1;
+background-color: rgba(240, 240, 240, 0.8);
+margin: 1em 7em;
+padding: 0.5em;
+text-align: center;
+}
+
+.tablessun {
+    display: none;
+}
+/*with out the grid the changes are not organig it chage so fast from one size to another that shows incon
+inconsistence and unplacent to change form small to big
+ok that inconhesive jump is from medium to large because 
+the table.
+
+inspect go to networkand right clik ober the reload the page so i can see how heavy it is 
+972 kb img page 1.9mb
+
+*/
+/*.home-grid {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-gap: 5em;
+}*/
+
+/*.headline-1 {
+grid-column: 1/4;
+grid-row: 1/2;
+}*/
+
+
+main figure.homeimg {
+    width: 50%;
+    margin: 0 0 0 2%;
+    float: right;
+    /*margin display position top - right - buton - left */
+
+    /*grid-column: 4/6;
+    grid-row: 1/4;
+    margin-left: -25px;
+    border: 3px solid #ccc;
+    padding: 10px;
+    box-shadow: 5px 10px 15px #999;*/
+}
+main figure.homeimg img {width: 100%;}
+main figure.homeimg figcaption {font-size: .75rem;}
+
+
+.paragraph-1 {
+margin: 0 2% 0 17px;
+    /*grid-column: 1/4;
+    grid-row: 2/3;*/
+}
+
+/*--------------------------footer-------------------*/
+footer {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+padding: 0.4em;
+align-items: right;
+}
+.map {
+    display: none;
+}
+.social {
+text-align: right;
+grid-column: 3/4;
+}
+footer {
+background-color: #219EBC;
+color: white;
+}
+@media screen and (max-width: 550px) {
+.home-grid,
+.banner-box,
+nav ul {
+    display: block;
+}
+nav ul li {
+    text-align: right;
+}
+.social img {
+    width: 45px;}
+}
+
+/*----------clearfix: force and elemenr not to collapse----*/
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}

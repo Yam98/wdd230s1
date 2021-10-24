@@ -9,9 +9,7 @@
 </head>
 <body>
     <header>
-        <picture>
-            <h1> </h1>
-        </picture>
+       
     </header>
     <nav></nav>
     <main>
@@ -35,3 +33,75 @@
     <script src=""></script>
 </body>
 </html>
+
+<!--FLEX
+    
+    HTML
+    <header>
+	<picture>
+		<img src="https://cdn1.iconfinder.com/data/icons/Futurosoft%20Icons%200.5.2/128x128/apps/keyboard_layout.png" alt="The world logo">
+	</picture>
+	<section class="headings">
+		<h1>Wasatch Global Ops</h1>
+		<q class="m">The dynamic world of logistics!</q>
+	</section> <--CLASS MAKE IT SIBLINGS IN FLEX--
+</header> 
+
+    CSS
+    body {
+	background-color: #bbb;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	background-color: #fff;
+	padding: 5px 0;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}/*center both to aling properly in the web*/
+
+header img {
+	width: 80px;
+	height: auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+	/*COLUMN* THIS MAKE THE H1 AND P GET PARALEL*/
+}
+
+.headings h1 {
+	font-size: 1.6rem;
+	margin: 0 0 0 17px;
+}
+
+.m {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: forestgreen;
+	margin-left: 20px;
+	font-size: .9rem;
+}
+
+
+/* Larger viewports */
+@media only screen and (min-width: 32.5em) {
+	header img {
+		width: 100%; /*this part make the image as bigeer as it can so no more of 100%*/
+	}
+
+	.headings h1 {
+		font-size: 3rem;
+	}
+
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		margin-left: 17px;
+	}
+}
+
+-->

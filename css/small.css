@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo&family=Nunito:ital,wght@1,300;1,400&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Exo&family=Nunito:ital,wght@1,300;1,400&display=swap");*/
 
 body {
-    font-family: "Nunito", Arial, sans-serif;
+    font-family: "Fira Sans", 'sans-serif'/*"Nunito", Arial, sans-serif*/;
     font-size: 16pt;
 }
 
@@ -30,7 +30,7 @@ h1 {
 }
 footer {
     background-color: cadetblue;
-    font-family: "Exo", Times New Roman, sans-serif;
+    font-family: "Montserrat", 'serif'/*"Exo", Times New Roman, sans-serif*/;
     text-align: center;
     padding: 1.9em;
 }

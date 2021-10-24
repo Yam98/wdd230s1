@@ -15,7 +15,7 @@
 	}
 
 	nav {
-		display: block;
+		text-align: center;
 		background: #EAE4E9;
 		background: -moz-linear-gradient(top, #EAE4E9 0%, #e7e6e7 100%);
 		background: -webkit-linear-gradient(top, #EAE4E9 0%, #e7e6e7 100%);
@@ -25,9 +25,10 @@
 	}
 	nav button { display: none;}
 
-    nav ul { margin-left: 2%;}
-
+    nav ul {margin-left: 2%;
 	
+	
+	}
 
     nav ul.hide{display: block;}
 
@@ -37,12 +38,31 @@
     nav ul li a {
         border: none;
         border-right: 1px solid rgba(0, 0, 0, 0.3);/*add a smart touch*/
-        padding: .6erm 1rem;
+        padding: .6rem 1rem;
+		/*border, padding, width = fix units px especially with founts border and layouts.rem base in browser.. more responsive but first to use a px unit 
+		*/
 
     }
    /*why is useing padding 6rem or 6em*/
 
    main {
-	   width: left;
+		max-width: 960px;
+		margin: 0 auto;
    }
+   .map {display: inline;}
+   
+   .tablessun {
+    	display: inline;
+	}
+   table,th,td {
+		border: thin solid #333;
+		border-collapse: collapse;
+		padding: 5px;
+	}
+
+	td {
+		background-color: #F0B0D6;
+		font-size: 0.8rem;
+		text-align: center;
+	}
 }
