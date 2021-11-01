@@ -225,3 +225,14 @@ nav ul li {
     display: table;
     clear: both;
 }
+/* --------------- lazyload ---------- */
+.lazy {
+    display: grid;
+    place-items: center;
+    /*grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1em;*/
+}
+
+/*.head{
+    
+} */ 
